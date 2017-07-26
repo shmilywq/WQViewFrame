@@ -15,7 +15,7 @@
 		46574C8C1F2746280023B369 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46574C8A1F2746280023B369 /* LaunchScreen.storyboard */; };
 		46574C971F2746280023B369 /* WQViewFrameDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46574C961F2746280023B369 /* WQViewFrameDemoTests.m */; };
 		46574CA21F2746280023B369 /* WQViewFrameDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46574CA11F2746280023B369 /* WQViewFrameDemoUITests.m */; };
-		46574CB21F2746720023B369 /* UIView+WQFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 46574CB11F2746720023B369 /* UIView+WQFrame.m */; };
+		46919F291F282740008D68D6 /* UIView+WQFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 46919F281F282740008D68D6 /* UIView+WQFrame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		46574C9D1F2746280023B369 /* WQViewFrameDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WQViewFrameDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46574CA11F2746280023B369 /* WQViewFrameDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WQViewFrameDemoUITests.m; sourceTree = "<group>"; };
 		46574CA31F2746280023B369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		46574CB01F2746720023B369 /* UIView+WQFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WQFrame.h"; sourceTree = "<group>"; };
-		46574CB11F2746720023B369 /* UIView+WQFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WQFrame.m"; sourceTree = "<group>"; };
+		46919F271F282740008D68D6 /* UIView+WQFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WQFrame.h"; sourceTree = "<group>"; };
+		46919F281F282740008D68D6 /* UIView+WQFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WQFrame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 		46574C7B1F2746280023B369 /* WQViewFrameDemo */ = {
 			isa = PBXGroup;
 			children = (
-				46574CAF1F2746490023B369 /* SourceCode */,
+				46919F261F282740008D68D6 /* SourceCode */,
 				46574C7F1F2746280023B369 /* AppDelegate.h */,
 				46574C801F2746280023B369 /* AppDelegate.m */,
 				46574C821F2746280023B369 /* ViewController.h */,
@@ -144,11 +144,11 @@
 			path = WQViewFrameDemoUITests;
 			sourceTree = "<group>";
 		};
-		46574CAF1F2746490023B369 /* SourceCode */ = {
+		46919F261F282740008D68D6 /* SourceCode */ = {
 			isa = PBXGroup;
 			children = (
-				46574CB01F2746720023B369 /* UIView+WQFrame.h */,
-				46574CB11F2746720023B369 /* UIView+WQFrame.m */,
+				46919F271F282740008D68D6 /* UIView+WQFrame.h */,
+				46919F281F282740008D68D6 /* UIView+WQFrame.m */,
 			);
 			path = SourceCode;
 			sourceTree = "<group>";
@@ -288,7 +288,7 @@
 			files = (
 				46574C841F2746280023B369 /* ViewController.m in Sources */,
 				46574C811F2746280023B369 /* AppDelegate.m in Sources */,
-				46574CB21F2746720023B369 /* UIView+WQFrame.m in Sources */,
+				46919F291F282740008D68D6 /* UIView+WQFrame.m in Sources */,
 				46574C7E1F2746280023B369 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,6 +523,7 @@
 				46574CA81F2746280023B369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46574CA91F2746280023B369 /* Build configuration list for PBXNativeTarget "WQViewFrameDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +532,7 @@
 				46574CAB1F2746280023B369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46574CAC1F2746280023B369 /* Build configuration list for PBXNativeTarget "WQViewFrameDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +541,7 @@
 				46574CAE1F2746280023B369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
