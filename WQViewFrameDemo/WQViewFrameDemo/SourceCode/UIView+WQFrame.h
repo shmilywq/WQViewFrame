@@ -13,10 +13,18 @@
 #define kWQScreenWidth ([UIScreen mainScreen].bounds.size.width)
 // 屏幕高
 #define kWQScreenHeight ([UIScreen mainScreen].bounds.size.height)
+// 状态栏高
+#define kWQStatusBarHeight (kWQScreenHeight == 812.0 ? 44.f : 20.f)
+// 导航栏高度
+#define kWQNavBarHeight 44.f
+// 导航栏+状态栏高
+#define kWQSafeAreaTopHeight (kWQStatusBarHeight + kWQNavBarHeight)
+// 底部安全区的高度
+#define SafeAreaBottomHeight (kWQScreenHeight == 812.0 ? 34 : 0)
 // 有导航栏时高度
-#define kWQScreenHeight_Nav ([UIScreen mainScreen].bounds.size.height - 64.f)
+#define kWQScreenHeight_Nav ([UIScreen mainScreen].bounds.size.height - kWQSafeAreaTopHeight)
 // 有tabbar和导航栏时的高度
-#define kWQScreenHeight_NavTab ([UIScreen mainScreen].bounds.size.height - 64.f - 49.f)
+//#define kWQScreenHeight_NavTab ([UIScreen mainScreen].bounds.size.height - kWQSafeAreaTopHeight - 49.f)
 //iPhone6的屏幕宽度的比例
 #define kWQFitWidth ([UIScreen mainScreen].bounds.size.width / 375)
 //iPhone6的屏幕高度的比例
